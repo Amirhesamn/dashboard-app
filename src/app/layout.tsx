@@ -1,5 +1,7 @@
 import ReduxProvider from "@/lib/store/Provider";
 import ThemeProvider from "@/lib/theme/ThemeProvider";
+import QueryProvider from "@/lib/query/QueryProvider";
+import "./globals.css"
 
 export default function RootLayout({
   children,
@@ -10,7 +12,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ReduxProvider>
-          <ThemeProvider>{children}</ThemeProvider>
+          <QueryProvider>
+            <ThemeProvider>
+              <div id="__next">{children}</div>
+            </ThemeProvider>
+          </QueryProvider>
         </ReduxProvider>
       </body>
     </html>

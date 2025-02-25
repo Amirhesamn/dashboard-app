@@ -1,9 +1,9 @@
-import TestButton from "@/components/TestButton";
+import UserList from "@/components/UserList";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center h-screen">
-      <TestButton />
+    <main className="flex flex-col items-center justify-center">
+      <UserList />
     </main>
   );
 }
