@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Dashboard App (Next.js 15 + MUI + Tailwind CSS + Redux Toolkit)
 
-## Getting Started
+This is a **modern dashboard application** built using **Next.js 15**, **MUI (Material UI)**, **Tailwind CSS**, and **Redux Toolkit**. It follows best practices for scalable architecture, state management, and UI styling.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📌 **Tech Stack**
+
+- **Framework:** Next.js 15 (App Router)
+- **UI Library:** MUI (Material UI)
+- **Styling:** Tailwind CSS
+- **State Management:** Redux Toolkit
+- **API Calls:** React Query (TanStack Query)
+- **Testing:** Jest & React Testing Library
+- **Deployment:** Vercel
+
+---
+
+## 🛠 **Installation & Setup**
+
+### 1️⃣ Clone the Repository
+
+```sh
+git clone https://github.com/yourusername/dashboard-app.git
+cd dashboard-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Install Dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+pnpm install  # or npm install / yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3️⃣ Run the Development Server
 
-## Learn More
+```sh
+pnpm dev  # or npm run dev / yarn dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+The app will be available at `` 🚀
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 **Project Structure**
 
-## Deploy on Vercel
+```
+/dashboard-app
+  /src
+    /app         # Next.js App Router directory
+      /layout.tsx  # Global layout wrapper
+      /page.tsx    # Home page
+    /components   # Reusable UI components
+    /lib          # Global utilities
+      /store      # Redux store
+      /theme      # MUI Theme
+    /styles       # Global styles (Tailwind CSS)
+  /public        # Static assets
+  .gitignore
+  package.json
+  tsconfig.json
+  tailwind.config.js
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎛 **Features**
+
+- 🔥 **Next.js 15 with App Router** for modern SSR & SSG.
+- 🎨 **MUI + Tailwind CSS** for highly customizable UI.
+- 🌐 **Redux Toolkit** for state management.
+- 🚀 **React Query** for optimized API fetching.
+- ✅ **Jest & React Testing Library** for unit testing.
+- ⚡ **Optimized performance with SSR & caching.**
+
+---
+
+## 🏗 **How to Contribute**
+
+1. **Fork the repository**
+2. **Create a new feature branch**
+   ```sh
+   git checkout -b feature-new-component
+   ```
+3. **Make your changes and commit**
+   ```sh
+   git commit -m "feat: add new dashboard component"
+   ```
+4. **Push your changes**
+   ```sh
+   git push origin feature-new-component
+   ```
+5. **Create a Pull Request**
+
+---
+
+## 📜 **License**
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 🚀 **Deployment**
+
+To deploy the app on **Vercel**, run:
+
+```sh
+pnpm build
+```
+
+Then, push to GitHub and connect the repo to **Vercel**.
+
+---
+
+## 💡 **Contact & Support**
+
+For questions or issues, feel free to **open an issue** on GitHub or reach out via [your email].
+
+---
+
+⭐ **Star this repo** if you found it helpful! 🚀
+
