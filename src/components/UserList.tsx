@@ -35,11 +35,11 @@ export default function UserList() {
     );
 
   return (
-    <div className="p-6">
+    <div className="p-6 ">
       <Typography variant="h5" className="text-center mb-4 font-bold">
         User List
       </Typography>
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 text-white">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {users?.map((user) => (
           <Card
             key={user.id}
@@ -47,13 +47,11 @@ export default function UserList() {
               boxShadow: 3,
               borderRadius: 2,
               padding: 2,
-              transition: "transform 0.2s",
-              "&:hover": { transform: "scale(1.05)" },
             }}
-            className="hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="hover:bg-red-500 cursor-pointer"
           >
             <CardContent>
-              <Typography variant="h6" className="text-red-500">
+              <Typography variant="h6" className="text-blue-500">
                 {user.name}
               </Typography>
               <Typography variant="body2" color="text.secondary">
